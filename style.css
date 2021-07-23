@@ -1,0 +1,113 @@
+.hero {
+}
+
+.hero-body, .hero-foot {
+  background-image: url('https://cdn.glitch.com/713abb34-0187-47a7-bdf0-12db90f86702%2F8032472.jpg?v=1626485375633');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer {
+  background-color: #acacac;
+}
+
+.is-size-1{
+  font-size: 6rem!important;
+  margin-left: 150px;
+  font-family: Comfortaa, sans-serif;
+  font-weight: 1000;
+  transition: 1s ease-in-out;
+}
+
+.is-size-1:hover{
+  text-shadow: -7px 7px #00ff00;
+}
+
+.is-size-3{
+  font-size: 3rem!important;
+  margin-left: 150px;
+  font-family: Comfortaa, sans-serif;
+  font-weight: 1;
+  transition: 1s ease-in-out;
+}
+
+
+.footer {
+  font-family: Raleway, sans-serif;
+  font-weight: 1;
+  padding-bottom: 3rem;
+  transition: 1s ease-in-out;
+}
+
+.footer:hover {
+  letter-spacing: 1px;
+}
+
+.is-4 {
+  font-family: Raleway, sans-serif;
+  font-weight: 1000;
+
+}
+
+.column{
+  padding-bottom: 3rem;
+}
+
+.card{
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+  transition: 1s ease-in-out;
+}
+
+.card:hover{
+  border-radius: 2rem;
+  box-shadow: 0 0em 4em 1em rgb(10 10 255 / 50%), 0 0 0 1px rgb(10 10 10 / 2%);
+}
+
+.subtitle {
+  color: #4a4a4a;
+  transition: 1s ease-in-out;
+}
+
+.card:hover .subtitle {
+  color: blue;
+}
+
+.modal-card-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  
+  transition: 1s ease-in-out;
+}
+
+h2 {
+  font-family: Raleway, sans-serif;
+  font-weight: 900;
+}
+
+.modal-card{
+  border-radius: 0.5rem;
+  transition: 1.0s ease-in-out;
+
+}
+
+.modal-card:hover{
+  box-shadow: 0 0em 6em 1em rgb(10 255 10 / 50%), 0 0 0 1px rgb(10 10 10 / 2%);
+}
+
+
+.delete{
+  transition: 0.5s ease-in-out;
+}
+
+.delete:hover{
+  background-color: red;
+}
+
+.popup{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
