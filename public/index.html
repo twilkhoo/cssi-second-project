@@ -1,89 +1,366 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.8.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.8.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.8.0/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.8.0/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.8.0/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.8.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.8.0/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.8.0/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.8.0/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.8.0/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generic Salads</title>
+  
+  
+  <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/codrops/ModalWindowEffects/master/css/component.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  
+</head>
+  
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+  
+<body>
+  
+  <section class="hero is-medium has-text-left is-danger">
+    <div class="hero-body">        
+      <p class="title is-size-1 ">
+        Dog breed selector
+      </p>
+      <p class="subtitle is-size-3">
+        <i>Find your perfect match!</i>
+      </p>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+  </section>
+  
+  
+  
+  
+<!-- Spinach and Fruit Salad Pop-Up -->   
+  <div id="spinId" class="modal modal-fx-fadeInScale" >
+    <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title has-text-left">Spinach and Fruit Salad</p>
+          <button class="delete" onclick="spinClose()" aria-label="close"></button>
+        </header>
+        
+        <section class="modal-card-body">
+          <div class="content">
+            
+            <figure class="image">
+              <img class="is-rounded" src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Four-Berry-Spinach-Salad_EXPS_SCM2BZ20_25841_E01_22_2b.jpg" alt="Picture of spinach and fruit salad">
+            </figure>
+            
+            
+            
+            
+            <h2>Ingredients</h2>
+            <ul>
+              <li>2 tablespoons sesame seeds</li>
+              <li>1 tablespoon poppy seeds</li>
+              <li>½ cup white sugar</li>
+              <li>½ cup olive oil</li>
+              <li>¼ cup distilled white vinegar</li>
+              <li>¼ teaspoon paprika</li>
+              <li>¼ teaspoon Worcestershire sauce</li>
+              <li>1 tablespoon minced onion</li>
+              <li>10 ounces fresh spinach</li>
+              <li>1 quart strawberries</li>
+              <li>¼ cup almonds</li>
+            </ul>
+            
+            <h2>Instructions</h2>
+            <ol>
+              <li>In a medium bowl, whisk together the sesame seeds, poppy seeds, sugar, olive oil, vinegar, paprika, Worcestershire sauce and onion. Cover, and chill for one hour.</li>
+              <li>In a large bowl, combine the spinach, strawberries and almonds. Pour dressing over salad, and toss. Refrigerate 10 to 15 minutes before serving.</li>
+            </ol>
+          
+            <h2>Nutrition Facts</h2>
+            <p>
+              <b>Per Serving:</b> 491 calories; protein 6g; carbohydrates 42.9g; fat 35.2g; sodium 62.9mg. (This recipe contains <b>4 </b> servings.)
+            </p>
+            
+            <p>
+              More info on <a href="https://www.allrecipes.com/recipe/14276/strawberry-spinach-salad-i/" target="_blank">allrecipes.com</a>
+            </p> 
+            
+          </div>
+        </section>
+        
+        
+        
+        
+      </div>
+    </div>
+  
+  
+  
+<!-- Mac popup -->   
+  <div class="modal" id="macId">
+    <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title has-text-left">Macaroni Salad</p>
+          <button class="delete" onclick="macClose()" aria-label="close"></button>
+        </header>
+        
+        <section class="modal-card-body">
+          <div class="content">
+            
+            <figure class="image">
+              <img class="is-rounded" src="https://www.chefnotrequired.com/wp-content/uploads/2019/09/creamy-macaroni-salad-blog-hero.jpg" alt="Picture of macaroni salad">
+            </figure>
+            
+            
+            
+            
+            <h2>Ingredients</h2>
+            <ul>
+              <li>1 cup mayonnaise (Optional)</li>
+              <li>¼ cup white vinegar</li>
+              <li>2 tablespoons Dijon mustard</li>
+              <li>2 teaspoons kosher salt, or more to taste</li>
+              <li>½ teaspoon ground black pepper</li>
+              <li>⅛ teaspoon cayenne pepper</li>
+              <li>1 tablespoon white sugar, or more to taste</li>
+              <li>1 cup finely diced celery</li>
+              <li>¾ cup diced red bell pepper</li>
+              <li>½ cup grated carrot</li>
+              <li>½ cup chopped green onions, white and light parts</li>
+              <li>¼ cup diced jalapeno pepper</li>
+              <li>¼ cup diced poblano pepper</li>
+              <li>1 (16 ounce) package uncooked elbow macaroni</li>
+              <li>1 tablespoon mayonnaise (Optional)</li>
+              <li>1 tablespoon water (Optional)</li>
+            </ul>
+            
+            <h2>Instructions</h2>
+            <ol>
+              <li>Whisk 1 cup mayonnaise, vinegar, Dijon mustard, salt, black pepper, and cayenne pepper together in a bowl until well blended; whisk in sugar. Stir in celery, red bell pepper, carrot, onions, and jalapeno and poblano peppers. Refrigerate until macaroni is ready to dress.</li>
+              <li>Bring a large pot of well salted water to a boil. Cook elbow macaroni in the boiling water, stirring occasionally until cooked through, 8 to 10 minutes. Drain but do not rinse. Allow macaroni to drain in a colander about 5 minutes, shaking out moisture from time to time. Pour macaroni into large bowl; toss to separate and cool to room temperature. Macaroni should be sticky.</li>
+              <li>Pour dressing over macaroni and stir until dressing is evenly distributed. Cover with plastic wrap. Refrigerate at least 4 hours or, ideally, overnight to allow dressing to absorb into the macaroni.</li>
+              <li>Stir salad before serving. Mix 1 tablespoon mayonnaise and 1 tablespoon water into salad for fresher look.</li>
+            </ol>
+          
+            <h2>Nutrition Facts</h2>
+            <p>
+              <b>Per Serving:</b> 295 calories; protein 5.4g; carbohydrates 32g; fat 16.1g; cholesterol 7.4mg; sodium 508.1mg. (This recipe contains <b>12 </b> servings.)
+            </p>
+            
+            <p>
+              More info on <a href="https://www.allrecipes.com/recipe/244305/chef-johns-classic-macaroni-salad/" target="_blank">allrecipes.com</a>
+            </p> 
+            
+          </div>
+        </section>
+        
+        
+        
+        
+      </div>
+    </div>
+  
+  
+  
+  
+<!-- Greek popup -->   
+  <div class="modal" id="greekId">
+    <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title has-text-left">Greek Salad</p>
+          <button class="delete" onclick="greekClose()" aria-label="close"></button>
+        </header>
+        
+        <section class="modal-card-body">
+          <div class="content">
+            
+            <figure class="image">
+              <img class="is-rounded" src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Greek-Salad-with-Green-Grapes_exps119248_BAFTB2307047B03_02_9b_RMS.jpg" alt="Picture of Greek salad">
+            </figure>
+            
+            
+            
+            
+            <h2>Ingredients</h2>
+            <ul>
+              <li>1 head romaine lettuce- rinsed, dried and chopped</li>
+              <li>1 red onion, thinly sliced</li>
+              <li>1 (6 ounce) can pitted black olives</li>
+              <li>1 green bell pepper, chopped</li>
+              <li>1 red bell pepper, chopped</li>
+              <li>2 large tomatoes, chopped</li>
+              <li>1 cucumber, sliced</li>
+              <li>1 cup crumbled feta cheese</li>
+              <li>6 tablespoons olive oil</li>
+              <li>1 teaspoon dried oregano</li>
+              <li>1 lemon, juiced</li>
+              <li>ground black pepper to taste</li>
+            </ul>
+            
+            <h2>Instructions</h2>
+            <ol>
+              <li>In a large salad bowl, combine the Romaine, onion, olives, bell peppers, tomatoes, cucumber and cheese.</li>
+              <li>Whisk together the olive oil, oregano, lemon juice and black pepper. Pour dressing over salad, toss and serve.</li>
+            </ol>
+          
+            <h2>Nutrition Facts</h2>
+            <p>
+              <b>Per Serving:</b> 265 calories; protein 6g; carbohydrates 14.1g; fat 22.4g; cholesterol 22.3mg; sodium 537.8mg. (This recipe contains <b>6 </b> servings.)
+            </p>
+            
+            <p>
+              More info on <a href="https://www.allrecipes.com/recipe/14373/greek-salad-i/" target="_blank">allrecipes.com</a>
+            </p> 
+            
+          </div>
+        </section>
+        
+        
+        
+        
+      </div>
+    </div>
+  
+  
+  
+  
+  
+  
+  <section>
+    
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+
+
+
+    <div class="columns is-centered">
+
+      <!-- COLUMN 1 -->
+      
+
+
+
+
+
+
+
+
+
+
+
+        <div class="columns">
+            <div class="column is-one-third">
+
+                
+                <div class="dropdown is-active">
+                    <div class="dropdown-trigger">
+                        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <span>Size</span>
+                        <span class="icon is-small">
+                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                        </button>
+                    </div>
+                    
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                        <div class="dropdown-content">
+                        <a href="#" class="dropdown-item" id="small-size" onclick="sizeVal('small')">
+                            Small
+                        </a>
+                        <a class="dropdown-item" id="medium-size" onclick="sizeVal('medium')">
+                            Medium
+                        </a>
+                        <a href="#" class="dropdown-item is-active" id="medium-size" onclick="sizeVal('large')">
+                            Large
+                        </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="column is-one-third">
+                <div class="dropdown is-active">
+                    <div class="dropdown-trigger">
+                        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <span>Size</span>
+                        <span class="icon is-small">
+                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                        </button>
+                    </div>
+                    
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                        <div class="dropdown-content">
+                        <a href="#" class="dropdown-item" id="small-size" onclick="sizeVal('small')">
+                            Small
+                        </a>
+                        <a class="dropdown-item" id="medium-size" onclick="sizeVal('medium')">
+                            Medium
+                        </a>
+                        <a href="#" class="dropdown-item is-active" id="medium-size" onclick="sizeVal('large')">
+                            Large
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="column is-one-third">
+
+                <div class="dropdown is-active">
+                    <div class="dropdown-trigger">
+                        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <span>Size</span>
+                        <span class="icon is-small">
+                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                        </button>
+                    </div>
+                    
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                        <div class="dropdown-content">
+                        <a href="#" class="dropdown-item" id="small-size" onclick="sizeVal('small')">
+                            Small
+                        </a>
+                        <a class="dropdown-item" id="medium-size" onclick="sizeVal('medium')">
+                            Medium
+                        </a>
+                        <a href="#" class="dropdown-item is-active" id="medium-size" onclick="sizeVal('large')">
+                            Large
+                        </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+      
+      
+      
+    </div>
+
+    
+
+  </section>
+  
+  
+
+  
+  
+  
+  
+  
+  
+  <script src="js/script.js" type="text/javascript" defer></script>
+</body>
+
 </html>
