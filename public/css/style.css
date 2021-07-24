@@ -1,5 +1,5 @@
 .hero-body, .hero-foot {
-  background-image: url('https://cdn.glitch.com/713abb34-0187-47a7-bdf0-12db90f86702%2F8032472.jpg?v=1626485375633');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url('https://www.vmcdn.ca/f/files/via/images/canada-dogs.jpg;w=1000;h=464;mode=crop');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -19,7 +19,7 @@
 }
 
 .is-size-1:hover{
-  text-shadow: -7px 7px #00ff00;
+  text-shadow: -7px 7px #a200ff;
 }
 
 .is-size-3{
@@ -30,6 +30,13 @@
   transition: 1s ease-in-out;
 }
 
+.is-1{
+  font-size: 3rem!important;
+  font-family: Raleway, sans-serif;
+  font-weight: 1000;
+  justify-content: center;
+  transition: 1s ease-in-out;
+}
 
 .footer {
   font-family: Raleway, sans-serif;
@@ -44,7 +51,9 @@
 
 .is-4 {
   font-family: Raleway, sans-serif;
+  font-size: 5rem!important;
   font-weight: 1000;
+  padding: 4rem 4rem 4rem 4rem;
 
 }
 
