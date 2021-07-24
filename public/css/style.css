@@ -1,4 +1,4 @@
-.hero-body, .hero-foot {
+.hero-body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url('https://www.vmcdn.ca/f/files/via/images/canada-dogs.jpg;w=1000;h=464;mode=crop');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -27,15 +27,6 @@
   margin-left: 150px;
   font-family: Comfortaa, sans-serif;
   font-weight: 1;
-  transition: 1s ease-in-out;
-}
-
-.is-1{
-  font-size: 3rem!important;
-  font-family: Raleway, sans-serif;
-  font-weight: 1000;
-  justify-content: center;
-  transition: 1s ease-in-out;
 }
 
 .footer {
@@ -51,23 +42,19 @@
 
 .is-4 {
   font-family: Raleway, sans-serif;
-  font-size: 5rem!important;
-  font-weight: 1000;
+  font-size: 4rem!important;
+  font-weight: 500;
   padding: 4rem 4rem 4rem 4rem;
 
 }
 
-.column{
-  padding-bottom: 3rem;
-}
-
-.card{
+.select{
   border-radius: 0.5rem;
   box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
   transition: 1s ease-in-out;
 }
 
-.card:hover{
+.select:hover{
   border-radius: 2rem;
   box-shadow: 0 0em 4em 1em rgb(10 10 255 / 50%), 0 0 0 1px rgb(10 10 10 / 2%);
 }
@@ -116,4 +103,31 @@ h2 {
 .popup{
   overflow-x: hidden;
   overflow-y: hidden;
+}
+
+.submiter{
+    background-color: #ffffff;
+    transition: 0.75s ease-in-out;
+}
+
+.submit-button-div{
+    padding: 3rem 3rem 3rem 3rem;
+}
+
+.page-change{
+    padding: 0rem 0rem 0rem 0rem;
+    
+}
+
+.input-page-button{
+    margin-left: 150px;
+
+}
+
+.is-info{
+    transition: 0.75s ease-in-out;
+}
+
+.is-info:hover{
+    box-shadow: 0 0em 4em 1em rgb(10 255 10 / 80%), 0 0 0 1px rgb(10 10 10 / 2%);
 }

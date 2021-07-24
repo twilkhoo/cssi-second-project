@@ -37,6 +37,8 @@ const sizeVal = (size) => {
   console.log(size);
 }
 
+
+
 /*
 Store 1 variable for size, 1 for friendliness, 1 for activity
 

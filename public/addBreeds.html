@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Match</title>
+    <link rel="shortcut icon" type="image/jpg" href="https://i.pinimg.com/originals/00/d2/fd/00d2fd064940f584d818da3f26b34363.gif"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/codrops/ModalWindowEffects/master/css/component.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script defer src="/__/firebase/8.3.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.3.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  
+</head>
+<body>
+  
+  <section class="hero is-medium has-text-left is-danger">
+    <div class="hero-body">        
+      <p class="title is-size-1 ">
+        Dog Match
+      </p>
+      <p class="subtitle is-size-3">
+        <i>Find your perfect match!</i>
+      </p>
+
+    <div class="buttons is-left input-page-button">
+        <button class="button is-info" onclick="window.location.href='/index.html'">Want to select a dog? Press here.</button>
+    </div>
+
+    </div>
+  </section>
+  
+  
+
+
+
+  
+  <section>
+    <div>
+        <h1 class="title is-4 has-text-centered">Add a breed!</h1>
+    </div>
+    
+
+    <div class="columns is-centered">
+
+        <div class="columns">
+
+            <div class="column is-full">
+                <div class="field">
+                    <label class="label">Breed Name:</label>
+                    <div class="control">
+                        <input id="breed" class="input" type="text" placeholder="Name of the breed...">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Size:</label>
+                    <div class="control">
+                        <div class="select">
+                            <select id="selectAddSize">
+                                <option >Small</option>
+                                <option>Medium</option>
+                                <option>Large</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="field">
+                    <label class="label">Friendliness:</label>
+                    <div class="control">
+                        <div class="select">
+                            <select id="selectAddFriend">
+                                <option>Low</option>
+                                <option>Medium</option>
+                                <option>High</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="field">
+                    <label class="label">Activity:</label>
+                    <div class="control">
+                        <div class="select">
+                            <select id="selectAddActivity">
+                                <option>Low</option>
+                                <option>Medium</option>
+                                <option>High</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="buttons submit-button-div is-centered">
+        <button onclick="submitBreed()" class="button submiter is-large is-success is-outlined is-centered is-rounded">Add this breed</button>
+    </div>
+
+
+
+
+  </section>
+
+  
+    <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Dog Match. No rights reserved.</strong> Information retrieved from the
+        <a href="https://www.nkk.no/bli-hundeeier/aktuelle-valper/" target="_blank">Norsk Kennel Klub</a>.
+      </p>
+    </div>
+  </footer>
+  
+
+  <script src="js/addBreed.js" type="text/javascript" defer></script>
+
+</body>
+
+</html>
