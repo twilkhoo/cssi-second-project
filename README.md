@@ -1,4 +1,3 @@
-# cssi-second-project
-Dog breed selector website: Find your ideal dog!
+# Dog breed selector website
 
-Web app that returns suitable dog breeds based on a set of user-selected dog traits.
+Web app that returns suitable dog breeds based on a set of user-selected dog traits: find your ideal dog!
